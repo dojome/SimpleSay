@@ -1,0 +1,8 @@
+// the search results page currently uses lists
+.ais-Hits-list {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(128px, 1fr));
+    grid-gap: 1em; 
+    margin-top: 20px;
+    list-style-type: none;  
+  }

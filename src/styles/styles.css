@@ -1,0 +1,121 @@
+.ais-Hits-list,
+.ais-Pagination-list {
+    margin-left: -40px;
+}
+
+.ais-Pagination-list {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    list-style-type: none;  
+    text-align: center;
+    margin: 0 auto;    
+}
+.ais-Pagination-item {
+    padding-left: 10px;
+    font-size: 18px;
+}   
+
+.ais-Hits-item {
+    display: flex;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    text-align: center;
+}
+
+
+.ais-Hits-item .gatsby-image-wrapper {
+  background-color: #F9FAFA;
+  -o-box-shadow:      12px 12px 29px #555;
+  -icab-box-shadow:   12px 12px 29px #555;
+  -khtml-box-shadow:  12px 12px 29px #555;
+  -moz-box-shadow:    12px 12px 29px #555;
+  -webkit-box-shadow: 12px 12px 29px #555;
+  box-shadow:         12px 12px 29px #555;
+  border-radius: 4px;
+  opacity: 0.95;  
+}
+
+.ais-Hits-item img:hover {
+    -webkit-filter: brightness(60%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;    
+  }
+
+
+@media (min-width: 360px) { 
+.ais-Hits-list {    
+    display: grid;
+    grid-template-columns: repeat(2, minmax(128px, 1fr));
+    grid-gap: 1em; 
+    margin-top: 20px;
+    list-style-type: none;  
+    }
+ }
+
+@media (min-width: 375px) { 
+.ais-Hits-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(128px, 1fr));
+    grid-gap: 1em; 
+    margin-top: 20px;
+    list-style-type: none;  
+    }
+ }
+
+@media (min-width: 576px) and (orientation: landscape) { 
+.ais-Hits-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(128px, 1fr));
+    grid-gap: 1em; 
+    margin-top: 20px;
+    list-style-type: none;  
+    }
+ }
+
+
+@media (min-width: 768px) { 
+.ais-Hits-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(128px, 1fr));
+    grid-gap: 1em; 
+    margin-top: 20px;
+    list-style-type: none;  
+    }
+ }
+
+
+ @media (min-width: 1024px) and (orientation: landscape) { 
+.ais-Hits-list {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(128px, 1fr));
+    grid-gap: 1em; 
+    margin-top: 20px;
+    list-style-type: none;  
+    }
+ }
+
+
+@media (min-width: 1200px) {
+.ais-Hits-list {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(128px, 1fr));
+    grid-gap: 1em; 
+    margin-top: 20px;
+    list-style-type: none;  
+    }
+
+ }
+
+@media (min-width: 2100px) { 
+.ais-Hits-list {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(128px, 1fr));
+    grid-gap: 1em; 
+    margin-top: 20px;
+    list-style-type: none;  
+    }
+ }
+

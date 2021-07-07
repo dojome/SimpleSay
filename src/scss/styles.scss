@@ -1,0 +1,140 @@
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+// Start with assigning color names to specific hex values.
+//
+// Color system
+//
+@import './colors.scss';
+
+// Reassign color vars to semantic color scheme
+$theme-colors: (
+  primary: $blue,
+  secondary: $gray-600,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800,
+  signin: $gray-400,
+  facebooksignin: $blue,
+  googlesignin: $redGoogle,
+
+) !default;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-rounded: true !default;
+$enable-shadows: true !default;
+$enable-gradients: false !default;
+$enable-transitions: false !default;
+$enable-hover-media-query: false !default;
+$enable-grid-classes: true !default;
+$enable-print-styles: true !default;
+
+// Grid containers
+// N/A
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $white !default;
+$body-color: $gray-700 !default;
+$inverse-bg: $gray-900 !default;
+$inverse-color: $gray-600 !default;
+
+// Links
+//
+// Style anchor elements.
+$link-decoration: none !default;
+$link-hover-decoration: none !default;
+
+// Fonts
+//
+@import './fonts.scss';
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+html,
+body {
+  height: 100%;
+  width: 100%;  
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+canvas { 
+  -o-box-shadow:      12px 12px 29px #555;
+  -icab-box-shadow:   12px 12px 29px #555;
+  -khtml-box-shadow:  12px 12px 29px #555;
+  -moz-box-shadow:    12px 12px 29px #555;
+  -webkit-box-shadow: 12px 12px 29px #555;
+  box-shadow:         12px 12px 29px #555;
+}
+
+.canvas-container {
+  margin: 0 auto;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 20px 0px;
+}
+
+img {
+  margin-bottom: 15px;
+  max-height: 100%;
+}
+
+img:hover {
+  animation: pulse 0.5s;
+}
+
+.container-login100 {
+  width: 100%;
+  min-height: calc(100vh - 56px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrap-login100 {
+  margin-top: 25px;
+  width: 320px;
+  height: 100%;
+  min-height: 550px;
+  background: none;
+  border-radius: 10px;
+  position: relative;  
+}
+
+.app-content-100 { 
+  height: calc(100vh - 100px);
+  width: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat';
+}
